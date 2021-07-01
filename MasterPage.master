@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <style type="text/css">
+       
+    </style>
+</head>
+<body >
+    <form id="form1" runat="server">
+        <div class="main">
+        <div class="head">
+            <table style="width:100%; height: 128px;">
+                <tr>
+                    <td class="auto-style12"><img src="Hinhanh/3.png" /><p>Cửa Hàng</p> &nbsp;</td>
+                    <td class="auto-style10"><img src="Hinhanh/4.png" /><p>1800 54 54 57</p>&nbsp;</td>
+                    <td class="auto-style3"><img src="Hinhanh/2.png" style="width: 759px" /><br />
+                    </td>
+                    <td class="auto-style11"><img src="Hinhanh/5.png" style="width: 39px" /><p style="width: 162px"><a href="DangNhap.aspx">Đăng Nhập</a></p>&nbsp;</td>
+                    <td class="auto-style8"><img src="Hinhanh/6.png" /><p style="width: 156px"><a href="GioHang.aspx">Giỏ Hàng</a></p>&nbsp;</td>
+                </tr>
+            </table>
+            </div>
+        <div class="menu">
+               <div>
+    <div class="navbar">
+        
+  <div class="dropdown">
+    <button class="dropbtn"><a href="TrangChuaspx.aspx">Hàng Mới </a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+            <a href="TrangSucVang.aspx">Trang Sức Vàng</a>
+              <a href="TrangSucBac.aspx">Trang Sức Bạc</a>
+              <a href="TrangSucCuoi.aspx">Trang Sức Cưới</a>
+              <a href="KimCuong.aspx">Trang Sức Kim Cương</a> 
+             <a href="#news">SALE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="dropdown">
+       <button class="dropbtn"><a href="TrangSucVang.aspx">Trang Sức Vàng</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+        <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+            <h2>Nhẫn & Lắc Tay</h2>
+            <a href="#news">Nhẫn đính hơn</a>
+              <a href="#news">Nhẫn cưới</a>
+              <a href="#news">Nhẫn kim cương</a>
+              <a href="#news">Lắc vàng</a> 
+             <a href="#news">Lắc bạc</a>
+            <a href="#news">Lắc kim cương</a>
+        </div>
+          <div class="column">
+              <h2>Bông Tai</h2>
+            <a href="#news">Bông Tai Vàng</a>
+              <a href="#news">Bông Tai Bạc</a>
+              <a href="#news">Bông Tai Cưới</a>
+              <a href="#news">Bông Tai Kim Cương</a> 
+        </div>
+          <div class="column">
+              <h2>Dây Chuyền</h2>
+            <a href="#news">Dây Chuyền Vàng</a>
+              <a href="#news">Dây Chuyền Bạc</a>
+              <a href="#news">Dây Chuyền Cưới</a>
+              <a href="#news">Dây Chuyền Kim Cương</a> 
+        </div>
+      </div>
+    </div>
+</div>
+              <div class="dropdown">
+        <button class="dropbtn"><a href="TrangSucBac.aspx">Trang Sức Bạc </a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+                  <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+            <h2>Nhẫn & Lắc Tay</h2>
+            <a href="#news">Nhẫn đôi</a>
+              <a href="#news">Nhẫn đính đá</a>
+              <a href="#news">Nhẫn ngọc trai</a>
+              <a href="#news">Lắc đôi</a> 
+             <a href="#news">Lắc đính đá</a>
+            <a href="#news">Lắc ngọc trai</a>
+        </div>
+          <div class="column">
+              <h2>Bông Tai</h2>
+            <a href="#news">Bông Tai đính đá</a>
+              <a href="#news">Bông Tai ngọc trai</a>
+        </div>
+          <div class="column">
+              <h2>Dây Chuyền</h2>
+            <a href="#news">Dây Chuyền đính đá</a>
+              <a href="#news">Dây Chuyền ngọc trai</a>
+        </div>
+      </div>
+    </div>
+</div>
+        <div class="dropdown">
+        <button class="dropbtn"><a href="TrangSucCuoi.aspx">Trang Sức Cưới</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+  <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+            <h2>Nhẫn & Lắc Tay</h2>
+            <a href="#news">Nhẫn Kim cương</a>
+              <a href="#news">Nhẫn Vàng</a>
+              <a href="#news">Nhẫn cầu hôn</a>
+        </div>
+          <div class="column">
+              <h2>Bộ Sưu Tập Nhẫn Cưới</h2>
+            <a href="#news">Nhẫn Cưới Long Phụng</a>
+              <a href="#news">Nhẫn Cưới Tình Hồng</a>
+              <a href="#news">Nhẫn Cưới Chung Đôi</a>
+              <a href="#news">Nhẫn Cưới Sánh Duyên</a>
+        </div> 
+      </div>
+    </div>
+</div>
+ <div class="dropdown">
+        <button class="dropbtn"><a href="KimCuong.aspx">Kim Cương</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+     <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+            <h2>Trang Sức Kim Cương</h2>
+            <a href="#news">Nhẫn Kim cương</a>
+              <a href="#news">Dây Chuyền Kim cương</a>
+              <a href="#news">Lắc Kim cương</a>
+            <a href="#news">Bông Tai Kim cương</a>
+            <a href="#news">Đồng Hồ Kim cương</a>
+            <a href="#news"> Kim cương viên</a>
+        </div>
+      </div>
+    </div>
+     </div>
+</div>  
+</div>
+            <div>
+                </div>
+            </div>
+    <div class="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        <div class="footer"> 
+            <p style="height: 26px">PNJ Là công ty chế tác và bán lẻ trang sức hàng đầu châu Á, giữ vị trí số 1 trong các phân khúc trung và cao cấp tại Việt Nam.</p>
+            <p>PNJ mang lại niềm kiêu hãnh cho khách hàng bằng các sản phẩm trang sức tinh tế, chất lượng vượt trội.</p>
+            <p>Thổi hồn vào sản phẩm bằng sự đam mê và không ngừng sáng tạo, với PNJ, mỗi tuyệt tác trang sức là một câu chuyện về những giá trị đích thực,những phẩm chất cao quý và vẻ đẹp tinh tế của riêng bạn mà chúng tôi mãi tôn vinh.</p>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
